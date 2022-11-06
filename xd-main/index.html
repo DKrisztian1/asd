@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mechwart Kajázó és Autószervíz</title>
+    <link rel="stylesheet" href="stilus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="index.html">Mechwart Kajázó és Autószervíz</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="#">Rólunk</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">Heti Menü</a>
+                    <li>
+                        <a class="desktop-link">Szolgáltatások</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Szolgáltatások</label>
+                        <ul>
+                            <li><a href="#">Étellap</a></li>
+                            <li><a href="#">Itallap</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Asztalfoglalás</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+    <div class="container no-margin">
+        <div class="row row-height">
+            <div class="col-12 bg-img1"></div>
+        </div>
+
+        <div class="row kepes">
+            <div class="col-12 introduction">
+                <img class="Pic1" src="kep3.jpg" alt="pic">
+                <div class="rolunk">
+                    <h1>Mechwart Kajázó és Autószervíz</h1><br><br><br>
+                    <h2>
+                        Szeretettel várunk Debrecen belvárosának szívében a legjobb bajor, ír és cseh sörökkel<br>
+                        minden nap, péntek és szombat este meghosszabbított nyitva tartással, egészen hajnali 1-ig.<br>
+                        Négy legendás sörnemzet remekei egy helyen - 9 féle csapolt sör, látványkonyha, pizzasütő,<br>
+                        faszén tüzelésű Josper grill, kézműves burgerek, csülkök, grillkolbászok, helyben sütött bajor
+                        perecek.
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-height">
+            <div class="col-12 bg-img2 cards">
+
+                <div class="card">
+                    <img class="card-img-top" src="Etelek.png">
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+            </div>
+
+
+            <div class="col-12 bg-black">
+                    <div class="card-body1">
+                        <h1 class="card-text1">Heti Menü</h1>
+                        <h2 class="cardtext1">A menü ára: 2500FT!
+                                <table class="heti_menu">
+                                    <tbody class="heti_menu_body">
+                                        <tr class="napok">
+                                            <th>Hétfő</th>
+                                            <th>Kedd</th>
+                                            <th>Szerda</th>
+                                            <th>Csütörtök</th>
+                                            <th>Péntek</th>
+                                        </tr>
+
+                                        <tr class="levesek">
+                                            <td>Tárkonyos vadraguleves<br><button type="button" class="csokkent" onclick="csokkent(0)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(0)">+</button></td>
+                                            <td>Halászlé<br><button type="button" class="csokkent" onclick="csokkent(1)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(1)">+</button></td>
+                                            <td>Babgulyás<br><button type="button" class="csokkent" onclick="csokkent(2)">-</button><span class="hany_darab">0</span><button type="button" class="csokkent" onclick="novel(2)">+</button></td>
+                                            <td>Májgombóc leves<br><button type="button" class="csokkent" onclick="csokkent(3)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(3)">+</button></td>
+                                            <td>Gyümölcsleves<br><button type="button" class="csokkent" onclick="csokkent(4)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(4)">+</button></td>
+                                        </tr>
+
+                                        <tr class="foetelek">
+                                            <td>Kijevi csirkemell rántva<br><button type="button" class="csokkent" onclick="csokkent(5)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(5)">+</button></td>
+                                            <td>Rántott sertésszelet<br><button type="button" class="csokkent" onclick="csokkent(6)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(6)">+</button></td>
+                                            <td>Hekk sültburgonya körettel<br><button type="button" class="csokkent" onclick="csokkent(7)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(7)">+</button></td>
+                                            <td>Holstein csirkemell<br><button type="button" class="csokkent" onclick="csokkent(8)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(8)">+</button></td>
+                                            <td>Szicíliai csirkeragu<br><button type="button" class="csokkent" onclick="csokkent(9)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(9)">+</button></td>
+                                        </tr>
+
+                                        <tr class="foetelek">
+                                            <td>Csirke fajitas<br><button type="button" class="csokkent" onclick="csokkent(10)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(10)">+</button></td>
+                                            <td>Diós bundában sült camembert<br><button type="button" class="csokkent" onclick="csokkent(11)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(11)">+</button></td>
+                                            <td>Sajttal töltött csirkemell<br><button type="button" class="csokkent" onclick="csokkent(12)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(12)">+</button></td>
+                                            <td>Vörösboros marha pörkölt<br><button type="button" class="csokkent" onclick="csokkent(13)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(13)">+</button></td>
+                                            <td>Ropogósra sült, fokhagymás csülök szelet<br><button type="button" class="csokkent" onclick="csokkent(14)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(14)">+</button></td>
+                                        </tr>
+
+                                        <tr class="desszertek">
+                                            <td>Tripla csoki torta<br><button type="button" class="csokkent" onclick="csokkent(15)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(15)">+</button></td>
+                                            <td>Nutellás palacsinta<br><button type="button" class="csokkent" onclick="csokkent(16)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(16)">+</button></td>
+                                            <td>Somlói galuska<br><button type="button" class="csokkent" onclick="csokkent(17)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(17)">+</button></td>
+                                            <td>Lekváros palacsinta<br><button type="button" class="csokkent" onclick="csokkent(18)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(18)">+</button></td>
+                                            <td>Reszelt gesztenyepüré<br><button type="button" class="csokkent" onclick="csokkent(19)">-</button><span class="hany_darab">0</span><button type="button" class="novel" onclick="novel(19)">+</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            <br><br><br>
+                            <table width="20%">
+                                <tbody>
+                                    <tr>
+                                        <th class="kozep">
+                                            Asztal Foglalás
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <li>
+                                                <form action="">
+                                                    <input type="text">
+                                                </form>
+                                            </li>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="">
+                    <div class="card-body">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 bg-img2"></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+    </div>
+    <div class="main-content">
+        <div class="left box">
+            <h2>Rólunk</h2>
+            <div class="content">
+                <p>Szeretettel várunk Debrecen belvárosának szívében a legjobb bajor, ír és cseh sörökkel<br>
+                    minden nap, péntek és szombat este meghosszabbított nyitva tartással, egészen hajnali 1-ig.<br>
+                    Négy legendás sörnemzet remekei egy helyen - 9 féle csapolt sör, látványkonyha, pizzasütő,<br>
+                    faszén tüzelésű Josper grill, kézműves burgerek, csülkök, grillkolbászok, helyben sütött bajor
+                    perecek.</p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="center box">
+            <h2>Címeink</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Debrecen Széchenyi u. 58., Debrecen, 4025</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+36 52 413 499</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">abc@Mechwart.hu</span>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>Kapcsolat tartás</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Message *</div>
+                        <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bottom kozep">
+        <span class="credit">Created By <a href="https://www.facebook.com/csanad.gyarmati">Gyarmati
+                Csanád</a></span>
+        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+    </div>
+    </footer>
+</body>
+
+</html>
